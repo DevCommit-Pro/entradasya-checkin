@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 )
-
+// Audit is an interface for recording and importing ticket usage events.
 type Audit interface {
 	Record(Usage) error
 	Import(string, []Usage) error
